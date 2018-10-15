@@ -9,30 +9,40 @@ homework_to_do = []
 homework_due_dates = []
 
 
-quiz/test = []
-quiz/test_due_dates = []
+quiz_test = []
+quiz_test_due_dates = []
 
 
 while True:
     #code goes here
 
-choice = int(input('''please enter a choice
-1) Add homework
-2) Add quiz/test
-3) Display homework, quizzes and tests
-'''))
+    choice = int(input('''please enter a choice
+    1) Add homework
+    2) Add quiz/test
+    3) Display homework, quizzes and tests
+    '''))
 
-if choice == 1:
-    print("what homework do you need to add?: ")
-elif choice == 2:
-    print("what quiz/test do you need to add?: ")
-elif choice == 3:
-    print("The following is you homework")
-    print(homework_to_do)
-    print(homework_due_dates)
+    if choice == 1:
+        homework = input("what homework do you need to add?: ")
+        homework_to_do.append(homework)
+        date = input("when is this due by?")
+        homework_due_dates.append(date)
+    elif choice == 2:
+        quiz_test_added = input("what quiz/test do you need to add?: ")
+        quiz_test.append(quiz_test_added)
+        quiz_test_due = input("When is your quiz/test due by?")
+        quiz_test_due_dates.append(quiz_test_due)
+    elif choice == 3:
+        
+        
+        
+        
+        print("The following is you homework")
+        print(homework_to_do)
+        print(homework_due_dates)
 
-    print("The following is your quizzes/tests")
-    print(quiz/test)
-    print(quiz/test_due_dates)
+        print("The following is your quizzes/tests")
+        print(quiz_test)
+        print(quiz_test_due_dates)
 
 
