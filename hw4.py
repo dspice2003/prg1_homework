@@ -7,4 +7,4 @@ number = input(">")
 number = int(number)
 
 for factor in range(1,number):
-    print(factor)
+    print(number)
