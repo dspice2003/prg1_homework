@@ -1,14 +1,13 @@
-number_list = []
-largest_number = 100
-
-numbers = input(" Enter numbers with a space between 0,100: ")
-number_list.append(numbers)
-
-number_space = int()
+# This program prints the largest number
 
 
-for number_space in range(0,largest_number):
-    print(number_space)
+number = input(" Enter numbers with a space: ")
+numbers_list = number.split(" ")
 
+max_number = int(numbers_list[0])
 
-    print(numbers "is your biggest number")
+for number in numbers_list:
+    int_number = int(number)
+    if(max_number < int_number):
+        max_number = int_number
+print("The largest number is ",max_number)
