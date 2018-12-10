@@ -29,4 +29,4 @@ problem 3
 '''
 def bubble_sort():
         items = []
-        if()
+        for items in range
